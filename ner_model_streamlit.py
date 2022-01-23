@@ -72,7 +72,7 @@ def model_pipeline():
 
 model_dict = model_pipeline()
 
-# @st.cache(hash_funcs={"_thread.RLock": lambda _: None},allow_output_mutation=True, suppress_st_warning=True)
+@st.cache(hash_funcs={"_thread.RLock": lambda _: None},allow_output_mutation=True, suppress_st_warning=True)
 def load_pipeline():
     nlp_pipeline = Pipeline(stages=[
                    model_dict["documentAssembler"],
