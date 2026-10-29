@@ -67,3 +67,7 @@ The trained model is used in a prediction pipeline: `DocumentAssembler → Sente
 - **One training run with general-domain embeddings.** There was no hyperparameter search and no comparison with biomedical embeddings, such as clinical or BioBERT embeddings, which typically perform better on this task.
 - **2022 software versions.** The notebook pins Spark 3.1.2 and Spark NLP 3.4.0; newer releases may need small API changes.
 - The model detects one entity type (`Disease`) and does not normalise mentions to an ontology such as MeSH.
+
+## License
+
+The code and notebooks are released under the [MIT License](LICENSE). The NCBI Disease corpus files are not covered by this license; they remain under the terms of the original corpus (see Data).
